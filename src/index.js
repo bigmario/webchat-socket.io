@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // Levantar server
 
-httpServer.listen(app.get('port'), () => {
+httpServer.listen(port = app.get('port'), () => {
     console.log('Server running on port ', app.get('port'));
 });
 
